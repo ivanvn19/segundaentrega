@@ -1,0 +1,723 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    background-image: url(https://img.freepik.com/foto-gratis/muro-hormigon-gris_53876-88973.jpg?t=st=1652292481~exp=1652293081~hmac=8d4925b971745e18647f3d0d31eff33478563701455c126d7c1d838ac4214cbe&w=1060);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    
+}
+h4{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: medium;
+}
+h2{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: medium;
+    text-align: center;
+}
+p{
+    margin: 50px;
+    padding: 1rem;
+    text-align: justify ;
+    font-family: 'Roboto Flex', sans-serif
+}
+.tituloc{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.titulocd{
+    align-items: center auto;
+    align-content: center auto;
+    justify-content: center auto;
+}
+
+.encabezadocoleccion{
+    padding: 2rem;
+}
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 1fr 5fr 1fr;
+    grid-template-areas: 
+    
+    "section1 aside"
+    "footer footer";
+}
+header{
+    padding: 0 20px;
+}
+
+header nav ul{
+    display: flex;
+    
+}
+header .navbar ul li{
+    list-style: none;
+    justify-content: space-around;
+}
+header .navbar ul li a{
+    text-decoration: none;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: x-large;
+    color: black;
+}
+header .navbar ul li a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.section1{
+    grid-area: section1;
+}
+.section1 .titulocd{
+    padding: 20px;
+    font-size: xx-large;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.section1 .colecciondestacada {
+    display: flex;
+
+    /*SETTINGS COLECCION INDEX */
+}
+.section1 .colecciondestacada a img{
+    width: 300px;
+    padding-left: 0.7rem;
+    border-radius: 7px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    transition: all 500ms ease;
+}
+.section1 .colecciondestacada a img:hover{
+    transform: scale(1.5);
+    
+}
+
+.section1 .colecciondestacada2 a img{
+    display: none;
+    
+}
+
+.aside{
+    grid-area: aside;
+}
+.aside .colecciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+}
+.aside .tituloc{
+    padding: 20px;
+    font-size: xx-large;
+    align-items: center;
+    align-content: center auto;
+    justify-content: center;
+}
+
+.col-md-4 img{
+    width: 300px;
+}
+
+.card img{
+    width: 300px;
+}
+
+.aside .colecciones a img{
+    width: 250px;
+    border-radius: 7px;
+    transition: all 500ms ease;
+}
+.aside .colecciones a img:hover{
+    opacity: .7;
+    border: solid yellow 2px;
+}
+.colecciones::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(176, 195, 10);
+    border-radius: 7px;
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center ;
+    align-content: center;
+    
+}
+footer a img{
+    width: 50px;
+}
+
+
+.nymaster{ 
+    grid-area: section1;
+
+    /* SETTINGS GALERIA COLECCION DESTACADA */
+}
+.coleccionny{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.nymaster .coleccionny img{
+    width: 200px;
+    transition: all 500ms ease;
+}
+.nymaster .coleccionny img:hover{
+    transform: scale(1.5);
+    }
+
+.aside .ivbio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 300px;
+    overflow: auto;
+}
+.aside .ivbio img{
+    width: 250px;
+    height: 160px;
+    border-radius: 7px;
+    transition: all 500ms ease;
+}
+.aside .ivbio img:hover{
+    opacity: .7;
+    border: 2px yellow solid;
+}
+.aside .ivbio p{
+    padding: 20px;
+    font-size: medium;
+}
+.section1 .divinacomedia {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    overflow: auto;
+    margin: 10px;
+    /* SETTINGS GALERIA DIVINA COMEDIA */
+}
+.section1 .divinacomedia img {
+    width: 250px;
+    border-radius: 2px;
+    border: 2px solid black;
+    margin-top: 10px;
+    transition: all 500ms ease;
+}
+.section1 .divinacomedia img:hover {
+    opacity: .7;
+    border: yellow 2px solid
+}
+.section1 .divinacomedia::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(176, 195, 10);
+    border-radius: 7px;
+}
+.aside .kimiko img {
+transition: all 500ms ease;
+}
+.aside .kimiko img:hover{
+    opacity: .7;
+    border: 2px yellow solid;
+}
+
+.section1 panoramicanoa{
+    grid-area: section1;
+
+    /*SETTINGS GALERIA NOA */
+}
+
+.section1 .panoramicanoa img{
+    width: 800px;
+    display: flex;
+    align-content:space-around;
+    margin-bottom: 10px;
+    transition: all 500ms ease;
+}
+.section1 .panoramicanoa img:hover{
+    opacity: .7;
+    border: 2px yellow solid;
+}
+.section1 .galeriaNOA{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+    height: 300px;
+    width: 800px;
+}
+.section1 .galeriaNOA::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(176, 195, 10);
+    border-radius: 7px;
+}
+.section1 .galeriaNOA img{
+    width: 250px;
+    transition: all 500ms ease;
+}
+.section1 .galeriaNOA img:hover{
+    opacity: .7;
+    border: 2px yellow solid;
+}
+.coleccionrf{
+    grid-area: section1;
+    /* SETTINGS GALERIA REFLEJOS DE ACERO */
+}
+.coleccionrf{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.refcolection img{
+    width: 300px;
+    border-radius: 7px;
+    border: yellow 2px solid;
+    transition: all 500ms ease;
+}
+.refcolection img:hover{
+    transform: scale(1.2);
+}
+.aside .okretich img{
+    width: 300px;
+    border-radius: 7px;
+}
+.aside .okretich img:hover{
+    opacity: .7;
+    border: yellow 2px solid
+}
+.mapuchecolection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    overflow: auto;
+    height: 300px;
+    width: 1000px;
+
+    /*SETTINGS GALERIA MAPUCHE */
+}
+.section1 .mapuchecolection::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(176, 195, 10);
+    border-radius: 7px;
+}
+.mapuchecolection img{
+    width: 300px;
+    border-radius: 7px;
+    transition: all 500ms ease;
+}
+.mapuchecolection img:hover{
+    opacity: .7;
+    border: yellow 2px solid
+}
+.piuvano img{
+border-radius: 7px ;
+}
+.piuvano img:hover{
+    opacity: .7;
+    border: yellow 2px solid
+}
+.h20colection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    overflow: auto;
+    height: 300px;
+    width: 1000px;
+/*SETTINGS GALERIA H20*/
+}
+.section1 .h20colection::-webkit-scrollbar{
+width: 7px;
+background-color: rgb(176, 195, 10);
+border-radius: 7px;
+}
+.h20colection img{
+    width: 300px;
+    border-radius: 7px;
+    transition: all 500ms ease;
+    margin-bottom: 10px;
+}
+.h20colection img:hover{
+    opacity: .7;
+    border: yellow 2px solid
+}
+.edward img{
+    width: 200px;
+    border-radius: 7px
+}
+.edward img:hover{ 
+opacity: .7;
+border: yellow 2px solid
+}
+.contactMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    /* Página Contact*/
+}
+.formulario{
+    width: 650px;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    
+}
+.mapa{
+    width: 650px;
+    height: 450px;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.section1 .titulocd{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 800px;
+    overflow: auto;
+    /* SETTINGS ABOUT US */
+}
+.section1 .titulocd p{
+    text-align: justify;
+    font-size: medium;
+}
+
+.section1 .titulocd::-webkit-scrollbar{
+    width: 7px;
+    background-color: rgb(176, 195, 10);
+    border-radius: 7px;
+    }
+
+.aside .table{
+    display: flex;
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+    align-content: center;
+}
+.section1 .mantenimiento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+
+}
+
+.section1 .mantenimiento img{
+    width: 800px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:768px){ 
+    .contenedor {
+        grid-template-areas:
+        "section1"
+        "aside "
+        "footer";
+        grid-template-columns: 3fr;
+        grid-row:  5fr 5fr 1fr;
+    }
+    
+   
+    
+    .coleccionny{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .aside .colecciones{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+            
+    }
+    .colecciondestacada img{
+        display: none;
+    }
+    
+
+    .section1 .colecciondestacada2 a img{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+        align-items: center ;
+        justify-content: space-around;
+        align-content: center  ;
+        transition: all 500ms ease;
+    }
+    .section1 .colecciondestacada2 a img:hover{
+        transform: scale(1.5);
+        
+    }
+    .aside .ivbio{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .aside .ivbio p{
+        width: 400px;
+    }
+
+    .section1 .divinacomedia{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .aside .kimiko{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+            
+    }
+    .aside .kimiko p{
+        width: 400px;
+    }
+    .refcolection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .okre{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .piuvano{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .section1 .mapuchecolection  {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .section1 .h20colection{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        overflow: visible;
+    }
+    .aside .edward{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .aside .edward p{
+        width: 400px;
+    }
+
+    .contactMain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        
+        /* Página Contact*/
+    }
+
+    .section1 .titulocd{
+        width: 400px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .aside .table {
+        align-items: center;
+        justify-content: center;
+        align-content:center;
+    }
+
+    .section1 .mantenimiento img{
+        width: 600px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:320px) {
+    .contenedor {
+        grid-template-areas:
+        "section1"
+        "aside "
+        "footer";
+        grid-template-columns: 3fr;
+        grid-row:  5fr 5fr 1fr;
+    }
+    .aside .colecciones{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-around;
+            
+    }
+    .section1 .colecciondestacada2 a img{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        margin-top: 0.7rem;
+        margin-left: 0.1rem;
+        align-items: center ;
+        justify-content: space-around;
+        align-content: center ;
+        transition: all 500ms ease;
+    
+    }
+    
+    .header{
+        width: 100%;
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .coleccionny{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        
+    }
+    .contactMain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        
+        /* Página Contact*/
+    }
+
+    .formulario{
+        width: 250px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        
+    }
+    .mapa{
+        width: 250px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .section1 .titulocd p{
+        width: 150px;
+    }
+    .section1 .mantenimiento img {
+        width: 300px;
+    }
+}
